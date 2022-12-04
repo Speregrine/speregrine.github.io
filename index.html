@@ -1,73 +1,92 @@
+<!--
+BRANDING
+#f6f8ff
+#222e50
+#f25d46
+#ffcf56
+#3590f3
+-->
 <!DOCTYPE html>
 <html>
     <head>
         
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&display=swap" rel="stylesheet">     
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">     
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">    
         <title>Peregrineapp.dev</title>
         <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="background.css">
         <style>
             *{
-                font-family: 'Domine', serif;
+                font-family: 'Roboto', sans-serif;
+
             }
             .btn-primary {background-color: #F25D46;}
-            h1,h2,h3,h4,h5,h6,p {color: #222E50;}
+            h1,h2,h3,h4,h5,h6,p {
+                font-weight: 200
+            }
             h1 {
-                font-weight: 700
+                font-weight: 400
             }
+            
     
-            .menu
-            {
-              background-color: #222E50;  
-            }
+           body {
+	background: linear-gradient(-45deg, #ffffff,#dedede);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
         </style>
+        
     </head>
+<body>
 
-
-<body style="background-color: #F6F8FF">
-<nav class="navbar navbar-dark navbar-expand-xxl menu">
-  <div class="container-fluid">
-    <a class="navbar-brand text-light" href="/index.html">Peregrineapp.dev</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active text-light" aria-current="page" href="/index.html">Home</a>
-        </li>
-          <li class="nav-item">
-          <a class="nav-link text-light" href="/blog.html">Blog</a>
-        </li>
-          <li class="nav-item">
-          <a class="nav-link text-light" href="/about.html">About</a>
-        </li>
-        <li class="nav-item dropdown ">
-          <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Links
-          </a>
-          <ul class="dropdown-menu">
-          <!--  <li><a class="dropdown-item" href="#"><i class="bi bi-steam"></i>Steam</a></li> -->
-            <li><a class="dropdown-item" target="_blank" href="https://sparked99.itch.io/"><i class="bi bi-file-code-fill"></i>Itch.io</a></li>
-            <li><a class="dropdown-item" target="_blank" href="https://twitter.com/sPeregrineDev"><i class="bi bi-twitter"></i>Twitter</a></li>
-            <li><a class="dropdown-item" target="_blank" href="https://www.youtube.com/channel/UCeDdSnPpsm_4BwceclKEojQ"><i class="bi bi-youtube"></i>Youtube</a></li>
-        <!--    <li><a class="dropdown-item" href="#"><i class="bi bi-piggy-bank-fill"></i>Patreon</a></li> -->
-        <!--    <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#"><i class="bi bi-mailbox2"></i>Newsletter</a></li> -->
-          </ul>
-        </li>
-      </ul>
+<nav></nav> 
+    
+       <div class="container min-vw-75" style="background-color: rgba(255,255,255,0.8); margin-top:50px;border-radius:25px">
+        <div class="row">
+            <div class="col ">
+                <h1 class="text-center">PeregrineApp.Dev</h1>
+            </div>
+        </div>
+               <div class="row">
+            <div class="col">
+                <h3 class="text-center">Apps</h3>
+            </div>
+            <div class="col">
+                <h3 class="text-center">Full Stack Development</h3>
+            </div>
+            <div class="col">
+                <h3 class="text-center">Indie Games</h3>
+            </div>
+        </div>
     </div>
-  </div>
-</nav>    
+   
+
     
     
-<h1>WIP</h1>
-<h2>Site not built yet please come back later</h2>
+    <script>
+        $('nav').load('/nav-partial.html');
+    </script>
+    <script src="js/background.js"></script>
 </body>
 </html>
