@@ -23,6 +23,19 @@ BRANDING
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="background.css">
         <style>
+            
+            a:link { text-decoration: none; }
+
+
+            a:visited { text-decoration: none; }
+
+
+            a:hover { text-decoration: none; }
+
+
+            a:active { text-decoration: none; }
+
+
             *{
                 font-family: 'Roboto', sans-serif;
 
@@ -43,6 +56,12 @@ BRANDING
 	height: 100vh;
 }
 
+            .myPill
+            {
+                background-color: rgba(255,255,255,0.8);
+                margin-top:50px;
+                border-radius:25px
+            }
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
@@ -62,23 +81,93 @@ BRANDING
 
 <nav></nav> 
     
-       <div class="container min-vw-75" style="background-color: rgba(255,255,255,0.8); margin-top:50px;border-radius:25px">
+       <div class="container min-vw-75 myPill">
         <div class="row">
             <div class="col ">
                 <h1 class="text-center">PeregrineApp.Dev</h1>
             </div>
         </div>
-               <div class="row">
+               <div class="row" id="my-stuff">
             <div class="col">
-                <h3 class="text-center">Apps</h3>
+                <a href="#apps"><h3 class="text-center" >Apps</h3></a>
             </div>
             <div class="col">
-                <h3 class="text-center">Full Stack Development</h3>
+                <a href="#development"><h3 class="text-center">Fullstack Development</h3></a>
             </div>
             <div class="col">
-                <h3 class="text-center">Indie Games</h3>
+                <a class="" href="#games"><h3 class="text-center">Indie Games</h3></a>
             </div>
         </div>
+           
+    </div>
+    <div class="container">
+            <div class="row">
+                <div data-bs-spy="scroll" data-bs-target="#my-stuff" data-bs-offset="0" class="container" tabindex="0">
+                    <div class="row myPill" style="height:50vh" id="apps">
+                        <div class="row">
+                            <div class="col ">
+                                <h1 class="text-center">Apps</h1>
+                                <h3 class="text-center text-danger">Apps will be listed here once released</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row myPill" id="development">
+                        <div class="row">
+                            <div class="col ">
+                                <h1 class="text-center">Fullstack Development</h1>
+                                <h3>Hosting &amp; Cloud Platforms</h3>
+                                <ul>
+                                    <li>Azure</li>
+                                    <li>Firebase</li>
+                                    <li>IIS</li>
+                                    <li>Apple App Store &amp; Google Play</li>
+                                    <li>Enterprise MDM for BYOD</li>
+                                </ul>
+                                <h3>Database and Storage</h3>
+                                <ul>
+                                    <li>Microsoft Sql Server(TSQL)</li>
+                                    <li>Local Network Storage</li>
+                                    <li>Azure Storage Accounts</li>
+                                </ul>
+                                <h3>Backend Technologies</h3>
+                                <ul>
+                                    <li>Microsoft ASP.NET</li>
+                                    <li>Entity Framework Core</li>
+                                    <li>LINQ</li>
+                                    <li>Azure Functions</li>
+                                    <li>Azure Service Bus Queue</li>
+                                    <li>Microsoft Graph API</li>
+                                    <li>MSAL for Bearer tokens &amp; user sign in</li>
+                                </ul>
+                                <h3>Web Technologies</h3>
+                                <ul>
+                                    <li>Razor Web Pages</li>
+                                    <li>Bootstrap</li>
+                                    <li>Jquery</li>
+                                    <li>Knockout JS</li>
+                                    <li>Blazor</li>
+                                    <li>React.JS</li>
+                                </ul>
+                                <h3>Mobile Technologies</h3>
+                                <ul>
+                                    <li>Native iOS development (UIkit &amp; SwiftUI)</li>
+                                    <li>Native Android development using Kotlin</li>
+                                    <li>Crossplatform development using Xamarin &amp; MAUI</li>
+                                    <li>Crossplatform development using flutter</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row myPill" style="height:50vh" id="games">
+                        <div class="row">
+                            <div class="col ">
+                                <h1 class="text-center">Games</h1>
+                                <h3 class="text-center text-danger">Games will be listed here once released</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           </div>
     </div>
    
 
